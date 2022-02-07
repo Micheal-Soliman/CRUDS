@@ -1,0 +1,145 @@
+/* standard */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Cairo", sans-serif;
+    font-display: swap;
+    background-color:  rgba(128, 128, 128, 0.4);
+
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+/* ########################################################### */
+/* box1 */
+.box1{
+    display: grid;
+    justify-content: center;
+    padding: 50px 0px;
+    text-align: center;
+}
+.box1 label{
+  display: block;
+}
+.box1 i{
+    margin-right: 10px;
+}
+input{
+    border: 0px;
+    border-bottom: 2px solid black;
+    margin: 12px 0px;
+    width: 250px;
+    height: 30px;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.submit{
+    background-color: black;
+    color: white;
+    width: 100px;
+    cursor: pointer;
+}
+/* ########################################################### */
+/* box2 */
+.box2{
+    position: relative;
+}
+#deleteAll{
+    display: inline;
+    position: absolute;
+    right: 0;
+    margin: 15px 0px;
+}
+#deleteAll span,
+#deleteAll i{
+    color: #570000bf;
+    font-size: 15px;
+    font-weight: bold;
+}
+#btn1,#btn2{
+    margin: 0px 5px;
+}
+#btn1 i,
+#btn2 i,
+#btn1 span,
+#btn2 span{
+    color: #570000bf;
+    font-size: 12px;
+    font-weight: bold;
+}
+#btn1 i,
+#btn1 span{
+    color: #001b00ba;
+} 
+#head,
+#item{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    text-align: center;
+    margin: 20px 0px;
+}
+
+::placeholder{
+    color: black;
+}
+/* ####################################################### */
+.bi-arrow-up-circle{
+    position: fixed;
+    right: -5%;
+    bottom: 2%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+/* ####################################################### */
+/* Mobile */
+
+@media (max-width: 465px) {
+  #deleteAll{
+    position: unset;
+  }
+}
+
+/* Small Screens */
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium Screens */
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large Screens */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
